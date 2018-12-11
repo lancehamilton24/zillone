@@ -18,6 +18,7 @@ class App extends Component {
             rel="noopener noreferrer"
           >
             Learn React
+            <button className='btn btn-danger'>HELP ME</button>
           </a>
         </header>
       </div>
