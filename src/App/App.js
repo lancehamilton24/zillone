@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import connection from '../helpers/data/connection';
+import connection from '../helpers/data/connections';
 
 import Auth from '../components/Auth/Auth';
 
