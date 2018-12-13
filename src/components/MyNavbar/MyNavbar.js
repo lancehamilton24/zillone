@@ -16,7 +16,7 @@ class MyNavbar extends React.Component {
   };
 
   render() {
-    const { isAuthed } = this.props;
+    const { isAuthed, logoutClickEvent } = this.props;
     return (
       <div className="my-navbar">
         <Navbar color="dark" dark expand="md">
@@ -25,7 +25,7 @@ class MyNavbar extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                { isAuthed ? <NavLink href="/components/">Logout</NavLink> : ''}
+                { isAuthed ? <NavLink onClick={logoutClickEvent}>Logout</NavLink> : ''}
                 {/* <NavLink href="/components/">Logout</NavLink> */}
               </NavItem>
             </Nav>
